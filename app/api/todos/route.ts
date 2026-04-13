@@ -5,6 +5,7 @@ import { listTodos } from "@/lib/controllers/todo/list.controller";
 import { jsonError, jsonSuccess, respondWithError } from "@/lib/utils/api";
 import { buildCreateTodoInput } from "@/lib/utils/todo";
 import { readJsonBody } from "@/lib/utils/request";
+export const runtime = "nodejs";
 
 const getPositiveInt = (value: string | null, fallback: number) => {
   const parsed = Number.parseInt(value ?? "", 10);

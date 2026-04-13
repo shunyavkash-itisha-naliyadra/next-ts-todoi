@@ -8,6 +8,8 @@ import { jsonError, jsonSuccess, respondWithError } from "@/lib/utils/api";
 import { buildUpdateTodoInput } from "@/lib/utils/todo";
 import { readJsonBody } from "@/lib/utils/request";
 
+export const runtime = "nodejs";
+
 type Context = {
   params: Promise<{ id: string }>;
 };
